@@ -6,16 +6,15 @@ burger.click(() => {
   $("body").css({
     "overflow-y": "hidden",
   });
-});
-
-$(".close").click(() => {
-  $(".header__content").hide("slow");
-  $("body").css({
-    "overflow-y": "scroll",
+  $(".header__content-list li a").click(() => {
+    $(".header__content").hide("slow");
+    $("body").css({
+      "overflow-y": "scroll",
+    });
   });
 });
 
-$(".header__content-list li a").click(() => {
+$(".close").click(() => {
   $(".header__content").hide("slow");
   $("body").css({
     "overflow-y": "scroll",
