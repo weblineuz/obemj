@@ -4,7 +4,7 @@ function init() {
   var myMap = new ymaps.Map(
     "map",
     {
-      center: [55.76, 37.64],
+      center: [41.29465, 69.12976],
       zoom: 10,
     },
     {
@@ -12,7 +12,7 @@ function init() {
     }
   );
   var myPlacemark = new ymaps.Placemark(
-    [55.76, 37.56],
+    [41.27465, 69.32976],
     {},
     {
       iconLayout: "default#image",
