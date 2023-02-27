@@ -4,22 +4,26 @@ function init() {
   var myMap = new ymaps.Map(
     "map",
     {
-      center: [41.29465, 69.12976],
-      zoom: 10,
+      center: [41.319461, 69.279809],
+      zoom: 15,
     },
     {
       searchControlProvider: "yandex#search",
     }
   );
-  var myPlacemark = new ymaps.Placemark(
-    [41.27465, 69.32976],
-    {},
+  myGeoObject = new ymaps.GeoObject(
+    {
+      // Описание геометрии.
+      geometry: {
+        type: "Point",
+        coordinates: [41.319461, 69.279809],
+      },
+    },
     {
       iconLayout: "default#image",
       iconImageHref: "images/mark.png",
       iconImageSize: [40, 40],
-      iconImageOffset: [-100, -100],
     }
   );
-  myMap.geoObjects.add(myPlacemark);
+  myMap.geoObjects.add(myGeoObject);
 }
