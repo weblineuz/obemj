@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__head">
+          <div class="header__head-left">
+            <a href="index.html">
+              <img src="images/logo.png" alt="" class="header__head-logo" />
+            </a>
+            <h1 class="header__head-text">
+              Общественное Объединение «Ўзбекистон Бахоловчилар, Экспертлар ва
+              Маслахатчилар Жамияти»
+            </h1>
+          </div>
+          <div class="header__head-right">
+            <ul class="header__head-lang">
+              <li><a href="#!">O’zbekcha</a></li>
+              <li><a href="#!" class="active">Русский</a></li>
+              <li><a href="#!">English</a></li>
+            </ul>
+          </div>
+          <i class="fa-solid fa-bars burger-menu d-xl-none d-lg-none"></i>
+        </div>
+        <div class="header__content">
+          <i class="fa-solid fa-xmark close d-xl-none d-lg-none"></i>
+          <ul class="header__content-list">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="About.html">О нас</a></li>
+            <li><a href="list.html" class="active">Список членов</a></li>
+            <li><a href="#accordionPanelsStayOpenExample">F.A.Q</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+          <div class="header__content-contacts">
+            <li>
+              <a href="#!">
+                <i class="fa-brands fa-instagram"></i>
+                Instagram
+              </a>
+            </li>
+            <li>
+              <a href="#!">
+                <i class="fa-sharp fa-solid fa-paper-plane"></i>
+                Telegram
+              </a>
+            </li>
+            <li>
+              <a href="#!">
+                <i class="fa-brands fa-square-facebook"></i>
+                Facebook
+              </a>
+            </li>
+            <li>
+              <a href="#!">
+                <i class="fa-brands fa-linkedin"></i>
+                Linkedin
+              </a>
+            </li>
+          </div>
+          <select
+            class="form-select d-xl-none d-lg-none"
+            aria-label="Default select example"
+          >
+            <option selected>Language</option>
+            <option value="ru">Русский</option>
+            <option value="en">English</option>
+            <option value="oz">O'zbekcha</option>
+          </select>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="members">
+        <div class="container">
+          <div class="members__head">
+            <div class="members__head-left">
+              <a href="index.html">
+                <i class="fa-sharp fa-solid fa-arrow-left"></i>
+              </a>
+
+              <h2 class="members__head-title">Все члены организации</h2>
+            </div>
+            <div class="members__head-right">
+              <label>Поиск среди членов</label>
+              <input type="text" placeholder="Поиск по ИНН, названии фирмы" />
+              <button style="border: none; outline: none; background: none">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+          </div>
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">№</th>
+                  <th scope="col">Номер сертификата</th>
+                  <th scope="col">ИНН</th>
+                  <th scope="col">Название Фирмы</th>
+                  <th scope="col">Количество оценщиков</th>
+                  <th scope="col">Право оценки</th>
+                  <th scope="col">Статус</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" class="col-1">1</th>
+                  <td>D0001</td>
+                  <td>302909638</td>
+                  <td>@МЧЖ "VERITAS"</td>
+                  <td>6</td>
+                  <td>Бизнес</td>
+                  <td class="green-table-item">Активный</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>D0001</td>
+                  <td>302909638</td>
+                  <td>МЧЖ "SMART CONSULT"</td>
+                  <td>4</td>
+                  <td>Бизнес</td>
+                  <td class="green-table-item">Активный</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>D0001</td>
+                  <td>302909638</td>
+                  <td>МЧЖ "BUSINESS EXPERT"</td>
+                  <td>3</td>
+                  <td>Кўчмас мулк</td>
+                  <td class="green-table-item">Активный</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>D0001</td>
+                  <td>302909638</td>
+                  <td>МЧЖ "ART ESTIMATE"</td>
+                  <td>3</td>
+                  <td>Кўчмас мулк</td>
+                  <td class="green-table-item">Активный</td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>D0001</td>
+                  <td>302909638</td>
+                  <td>МЧЖ "EXPRESS ESTIMATE "</td>
+                  <td>3</td>
+                  <td>Кўчмас мулк</td>
+                  <td class="green-table-item">Активный</td>
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td>D0001</td>
+                  <td>302909638</td>
+                  <td>МЧЖ "CARAT CONSULT"</td>
+                  <td>4</td>
+                  <td>Бизнес</td>
+                  <td class="green-table-item">Активный</td>
+                </tr>
+                <tr>
+                  <th scope="row">7</th>
+                  <td>D0001</td>
+                  <td>302909638</td>
+                  <td>МЧЖ "XOLIS BOHOLASH XIZMATI"</td>
+                  <td>3</td>
+                  <td>Кўчмас мулк</td>
+                  <td class="green-table-item">Активный</td>
+                </tr>
+                <tr>
+                  <th scope="row">8</th>
+                  <td>D0001</td>
+                  <td>302909638</td>
+                  <td>МЧЖ "OMEGA CONSULT"</td>
+                  <td>1</td>
+                  <td>Бизнес</td>
+                  <td class="green-table-item">Активный</td>
+                </tr>
+                <tr>
+                  <th scope="row">9</th>
+                  <td>D0001</td>
+                  <td>302909638</td>
+                  <td>ХК "HLB VALUATION"</td>
+                  <td>1</td>
+                  <td>Кўчмас мулк</td>
+                  <td class="green-table-item">Активный</td>
+                </tr>
+                <tr>
+                  <th scope="row">10</th>
+                  <td>D0001</td>
+                  <td>302909638</td>
+                  <td>МЧЖ "PARTNER EVALUATOR CONSULTING</td>
+                  <td>1</td>
+                  <td>Бизнес</td>
+                  <td class="green-table-item">Активный</td>
+                </tr>
+                <tr>
+                  <th scope="row">11</th>
+                  <td>D0001</td>
+                  <td>302909638</td>
+                  <td>МЧЖ "BARQAROR BAHOLASH"</td>
+                  <td>6</td>
+                  <td>Бизнес</td>
+                  <td class="green-table-item">Активный</td>
+                </tr>
+                <tr>
+                  <th scope="row">12</th>
+                  <td>D0001</td>
+                  <td>302909638</td>
+                  <td>МЧЖ "ELEKTRON BAHOLASH"</td>
+                  <td>6</td>
+                  <td>Бизнес</td>
+                  <td class="green-table-item">Активный</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <section class="answers">
+        <div class="container">
+          <p class="answers__title">Часто задаваемые вопросы</p>
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2
+                class="accordion-header accordion-title"
+                id="panelsStayOpen-headingOne"
+              >
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseOne"
+                >
+                  Что такое OBEMJ?
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseOne"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingOne"
+              >
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
+                  nulla quasi, inventore ab repudiandae quaerat illum, quidem
+                  laboriosam sunt ea porro sapiente autem sed doloribus, nam
+                  animi pariatur iste consectetur.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseTwo"
+                >
+                  Как стать членом организации?
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingTwo"
+              >
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
+                  nulla quasi, inventore ab repudiandae quaerat illum, quidem
+                  laboriosam sunt ea porro sapiente autem sed doloribus, nam
+                  animi pariatur iste consectetur.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseThree"
+                >
+                  Как сделать оплату за членство?
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingThree"
+              >
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
+                  nulla quasi, inventore ab repudiandae quaerat illum, quidem
+                  laboriosam sunt ea porro sapiente autem sed doloribus, nam
+                  animi pariatur iste consectetur.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseFour"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseFour"
+                >
+                  Что входит в членство?
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseFour"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingFour"
+              >
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
+                  nulla quasi, inventore ab repudiandae quaerat illum, quidem
+                  laboriosam sunt ea porro sapiente autem sed doloribus, nam
+                  animi pariatur iste consectetur.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <h2 class="footer__title">
+          Свяжитесь с нами
+          <a href="#!"><img src="images/arrow-b-r.png" alt="" /></a>
+        </h2>
+      </div>
+
+      <hr />
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__content-logo">
+            <img src="images/logo.png" alt="" />
+          </div>
+          <div class="footer__content-info">
+            <ul>
+              <li>
+                <a href="tel:+2085550112"
+                  ><span class="white-round"></span>(208) 555-0112</a
+                >
+              </li>
+              <li>
+                <a href="mailto:info@obemj.uz"
+                  ><span class="white-round"></span>info@obemj.uz</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer__content-info">
+            <ul>
+              <li>
+                <a href="#!"><span class="white-round"></span>Instagram</a>
+              </li>
+              <li>
+                <a href="#!"><span class="white-round"></span>Facebook</a>
+              </li>
+              <li>
+                <a href="#!"><span class="white-round"></span>Telegram</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__sub">
+          <ul class="footer__sub-left">
+            <li><a href="About.html">О нас</a></li>
+            <li><a href="list.html">Список членов</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+          <p class="footer__sub-right">
+            © OBEMJ. Все услуги лицензированы 2023
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script/jquery.js"></script>
+    <script src="script/popper.js"></script>
+    <script src="script/bootstrap.bundle.min.js"></script>
+    <script src="script/script.js"></script>
+  </body>
+</html>
