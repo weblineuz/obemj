@@ -639,9 +639,19 @@ body {
         gap: 20px;
     }
 
+    .not_found-text span,
+    .not_found-text a {
+        font-size: 16px;
+    }
+
 }
 
 @media(max-width:991px) {
+    .not_found-content {
+        flex-direction: column;
+
+    }
+
     .form-select {
         width: auto !important;
         margin: 0 auto;
@@ -738,15 +748,18 @@ body {
     .members__head {
         align-items: flex-start;
     }
+
     #map {
         max-width: 400px;
     }
+
     .ymaps-2-1-79-map {
-       display: flex !important;
-       justify-content: center !important;
-       width: 100% !important;
-       height: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
+        width: 100% !important;
+        height: 100% !important;
     }
+
     .header__head-text {
         font-size: 14px;
         max-width: 370px;
@@ -780,13 +793,21 @@ body {
     }
 }
 
+@media(max-width:620px) {
+    .not_found-content img {
+        max-width: 370px;
+    }
+}
+
 @media(max-width: 495px) {
     #map {
         max-width: 300px;
     }
+
     #map {
         height: 300px !important;
     }
+
     .members__head {
         flex-direction: column;
         gap: 20px;
@@ -835,6 +856,18 @@ body {
 
 
 @media(max-width:420px) {
+    .not_found-text {
+        text-align: center;
+    }
+
+    .not_found-title {
+        text-align: center;
+    }
+
+    .not_found-content img {
+        max-width: 295px;
+    }
+
     .about__content-title {
         font-size: 24px;
     }
