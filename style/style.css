@@ -631,6 +631,7 @@ body {
 .burger-menu {
     color: white;
     font-size: 20px;
+    cursor: pointer;
 }
 
 @media(max-width:1200px) {
@@ -649,9 +650,7 @@ body {
 @media(max-width:991px) {
     .not_found-content {
         flex-direction: column;
-
     }
-
     .form-select {
         width: auto !important;
         margin: 0 auto;
@@ -664,6 +663,7 @@ body {
         top: 2%;
         font-size: 20px;
         color: white;
+        cursor: pointer;
     }
 
     .header__content {
