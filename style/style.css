@@ -651,6 +651,7 @@ body {
     .not_found-content {
         flex-direction: column;
     }
+
     .form-select {
         width: auto !important;
         margin: 0 auto;
@@ -800,8 +801,8 @@ body {
 }
 
 @media(max-width: 495px) {
-    #map {
-        max-width: 300px;
+    .footer__content-info ul {
+        padding-left: 0;
     }
 
     #map {
